@@ -1,20 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import StaticImages from "./StaticImages";
+import RemoteImages from "./RemoteImages";
+import ImgBackground from "./ImgBackground";
+import TheScrollView from "./TheScrollView";
+import Buttons from "./Buttons";
+import Pressables from "./Pressables";
+import Modals from "./Modals";
+import TheStatusBar from "./TheStatusBar";
+import TheActivityIndicator from "./TheActivityIndicator";
+import TheAlert from "./TheAlert";
+import CustomComponent from "./CustomComponent";
+import TheStyleSheet from "./TheStyleSheet";
+import FlexBoxLayout from "./FlexboxLayout";
+import LayoutRelativeAbsolute from "./Layout(Relative & Absolute)";
+import DynamicUI from "./DynamicUI";
+import DynamicUI2 from "./DynamicUI2";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+
+const App = () => {
+  return(
+    // <StaticImages/>
+    // <RemoteImages/>
+    // <ImgBackground/>
+    // <TheScrollView/>
+    // <Buttons/>
+    // <Pressables/>
+    // <Modals/>
+    // <TheStatusBar/>
+    // <TheActivityIndicator />
+    // <TheAlert />
+    // <CustomComponent name='Bruce Wayne'/>
+    // <TheStyleSheet />
+    // <FlexBoxLayout />
+    // <LayoutRelativeAbsolute/>
+    //   <DynamicUI/>
+      <DynamicUI2/>
   );
+   
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

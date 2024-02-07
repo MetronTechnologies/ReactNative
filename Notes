@@ -1,0 +1,93 @@
+TEXT COMPONENT
+    -- this is a component for displaying text
+    -- it supports nesting, styling and touch handling
+    -- depending on the target platform, RN will translate this component to either a UITextView (iOS), a TextView (Andoid) or a 'p' (Web)
+
+
+IMAGE COMPONENT
+    -- the image component enables the display of various types of images, including static images, network images and images from the local disk, such as the camera roll
+    -- RN translates the image component to platform-specific counterparts such as UIImageView for iOS, ImageView for andriod and img for the web
+
+
+SCROLLVIEW COMPONENT
+    -- it wraps the platform-specific scrolling functionality
+    -- it requires a bounded height to function properly
+    -- it allows scrolling as the view component doesn't allow scrolling
+
+
+BUTTON COMPONENT
+    -- it allows user to triger actions
+    -- it has platform specific rendering for iOS and Andriod
+
+PRESSABLE COMPONENT
+    -- it is a wrapper component that detects various stages of press interactions on its defined children
+    -- a custom button can be created using pressable if the native button doesn't mean current need
+    -- pressable also supports other events apart from onPress
+        +> onPressing is called when a press is activated
+        +> onLongPress is triggered when a press is help for longer than 500 milliseconds
+        +> onPressOut is called when the press gesture is deactivated
+
+
+MODAL COMPONENT
+    -- it is a screen that overlays the app content to provide important information or prompt the user for a decision
+    -- presentationStyle only affects iOS and not Android
+
+
+StatusBar
+    -- The status bar allows the control of the application's status bar
+
+
+Activity Indicator
+    -- It displays a circular loading indicator
+    -- It is used to inform the users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates
+
+Alert
+    -- It launches an alert dialog with specified title and message
+    -- List of buttons can also be specified
+
+
+FlexBox Layout
+    -- At the core of layout design in react native is flexbox. This means that the view box is already a flex container by default
+    -- Flexbox is a powerful one-dimensional layout model used to arrange elements within a container
+    -- With flexbox, there is the freedom to arrange items either horizontally or vertically
+    -- The spacing and alignment can also be controlled within the container
+    -- The flex container by default occupies the space needed by its children
+    -- Flex directions include column, column-reverse, row, row-reverse
+    -- Align items by default is set to stretch
+
+        Gap
+    -- Gap related properties allows the managing of spacing between rows and columns
+    -- Gap properties includes rowGap, columnGap and gap
+
+        Flex Basis
+    -- Available space is distributed according to flex-basis and no height
+    -- This property determines the initial size of a flex item before any extra space in the container is distributed
+
+        Flex Shrink
+    -- This property determines how children within a container shrinks along the main axis when their combined size exceeds the container's size
+
+        Flex Grow
+    -- This determines how much space an item should occupy inside a flex container when there is extra space available
+    -- When flex is set to a +ve number, its equivalent to setting flex grow with the same +ve number.
+    -- flex = flexGrow
+    -- flexGrow = flex: +ve number, flexShrink: 1, flexBasis: 0
+
+Layout
+    The layouts are based on the position property, which defines how an element is positioned within its parent container
+
+        Relative Layout
+    -- This is the default layout
+    -- The element is positioned according to the normal flow of the layout
+    -- It remains in its original position and can be offset from that position using the top, right, bottom and left values
+    -- The offset does not affect the positioning of any sibling or parent element(s)
+
+        Absolute Layout
+    -- Elements doesn't participate in the normal flow of the layout
+    -- Positioning of elements is relative to its parent container
+
+Dynamic User Interface
+    Users don't use identical devices, therefore a dynamic interface is necessary
+
+        Dimension API
+    -- When using the dimension component, extra code has to be written in order to make the user interface dynamic when orientation is changed
+    -- The useWindowDimensions component helps in the issue the dimension component has
