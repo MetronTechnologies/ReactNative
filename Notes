@@ -91,3 +91,13 @@ Dynamic User Interface
         Dimension API
     -- When using the dimension component, extra code has to be written in order to make the user interface dynamic when orientation is changed
     -- The useWindowDimensions component helps in the issue the dimension component has
+
+SafeAreaView
+    This has a purpose of rendering content within the safe area boundary of a device. It applies padding to reflect the physical limitations of the screen such as camera notches, rounded corners etc.
+
+PlatForm Specific Code
+    When developing a cross-platform app, maximizing code reuse is a priority. There are situations when it becomes necessary to tailor your code to specific platforms.
+    React Native offers two approaches for organizing and separating platform-specific code
+    ---> Platform module : useful when a small portion of code is platform specific.
+    ---> Platform-specific file extensions
+

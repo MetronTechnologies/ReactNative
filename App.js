@@ -14,6 +14,11 @@ import FlexBoxLayout from "./FlexboxLayout";
 import LayoutRelativeAbsolute from "./Layout(Relative & Absolute)";
 import DynamicUI from "./DynamicUI";
 import DynamicUI2 from "./DynamicUI2";
+import TheSafeAreaView from "./TheSafeAreaView";
+import ThePlatformSpecificCode from "./ThePlatformSpecificCode";
+import CustomButton from "./CustomButton";
+import Pokemon from "./PokemonCards/Pokemon";
+import {TheList} from "./TheList";
 
 
 
@@ -34,7 +39,12 @@ const App = () => {
     // <FlexBoxLayout />
     // <LayoutRelativeAbsolute/>
     //   <DynamicUI/>
-      <DynamicUI2/>
+    //   <DynamicUI2/>
+    //   <TheSafeAreaView/>
+    //   <ThePlatformSpecificCode/>
+    //   <CustomButton title="Click this" onPress={() => alert("Pressed")}/>
+    //   <Pokemon/>
+      <TheList/>
   );
    
 }

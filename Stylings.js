@@ -1,4 +1,4 @@
-import {StyleSheet} from "react-native";
+import {Platform, StatusBar, StyleSheet} from "react-native";
 
 
 
@@ -139,6 +139,121 @@ export const myStyles = StyleSheet.create({
                 justifyContent: "center"
             }
         }
+    },
+    SafeArea: {
+        container: {
+            flex: 1,
+            backgroundColor: "plum"
+        },
+        box: {
+            padding: 20
+        },
+        text: {
+            fontSize: 24,
+            fontWeight: "bold",
+            textAlign: "center"
+        },
+        safeContainer: {
+            flex: 1,
+            backgroundColor: "plum"
+        }
+    },
+    PlatformCode: {
+        container:{
+            flex: 1,
+            backgroundColor: "plum",
+            paddingTop: Platform.OS === "ios" ? 20 : 0
+        },
+        text: {
+            fontWeight: "bold",
+            textAlign: "center",
+            ...Platform.select({
+                ios: {
+                    color: "purple",
+                    fontSize: 24
+                },
+                android: {
+                    color: "blue",
+                    fontSize: 30,
+                    fontStyle: "italic"
+                }
+            })
+        }
+    },
+    Pokemon: {
+        container: {
+            flex: 1,
+            backgroundColor: '#f5f5f5',
+            paddingTop: Platform.OS == "android" ?
+                StatusBar.currentHeight : 0,
+        },
+        card: {
+            backgroundColor: 'white',
+            borderRadius: 16,
+            borderWidth: 2,
+            padding: 16,
+            margin: 16,
+            ...Platform.select({
+                ios: {
+                    shadowOffset: {
+                        width: 2,
+                        height: 2
+                    },
+                    shadowColor: '#333',
+                    shadowOpacity: 0.3,
+                    shadowRadius: 4
+                },
+                android: {
+                    elevation: 5
+                }
+            })
+        },
+        nameContainer: {
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            marginBottom: 32
+        },
+        name: {
+            fontSize: 30,
+            fontWeight: 'bold'
+        },
+        hp: {
+            fontSize: 22
+        },
+        image: {
+            width: '100%',
+            height: 200,
+            marginBottom: 16
+        },
+        typeContainer: {
+            marginBottom: 40,
+            alignItems: 'center'
+        },
+        badge: {
+            flexDirection: 'row',
+            alignItems: 'center',
+            paddingVertical: 6,
+            paddingHorizontal: 12,
+            borderRadius: 20,
+            borderWidth: 4
+        },
+        typeEmoji: {
+            fontSize: 30,
+            marginRight: 12
+        },
+        typeText: {
+            fontSize: 22,
+            fontWeight: 'bold'
+        },
+        movesContainer: {
+            marginBottom: 16
+        },
+        movesText: {
+            fontSize: 22,
+            fontWeight: 'bold'
+        },
+        weakContainer: {
+            marginBottom: 8
+        }
     }
-
-});
+})
