@@ -1,7 +1,7 @@
 import {View, Text, Image, ImageBackground} from "react-native"
 
 
-const logoImg = require("./assets/adaptive-icon.png");
+const logoImg = require("../assets/adaptive-icon.png");
 const ImgBackground = () => {
   return(
     <View style={{ flex:1, backgroundColor:"plum", padding: 60}}>

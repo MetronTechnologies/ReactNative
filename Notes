@@ -101,3 +101,8 @@ PlatForm Specific Code
     ---> Platform module : useful when a small portion of code is platform specific.
     ---> Platform-specific file extensions
 
+
+List
+    -- Using the normal list method, al items are rendered in the list even when they are not in the view port.
+    -- The recommended way of rendering list in react native is to use the FLAT LIST component which renders only the items currently in view which makes it (flat list) performant for long lists
+

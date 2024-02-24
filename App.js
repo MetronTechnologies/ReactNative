@@ -1,24 +1,25 @@
-import StaticImages from "./StaticImages";
-import RemoteImages from "./RemoteImages";
-import ImgBackground from "./ImgBackground";
-import TheScrollView from "./TheScrollView";
-import Buttons from "./Buttons";
-import Pressables from "./Pressables";
-import Modals from "./Modals";
-import TheStatusBar from "./TheStatusBar";
-import TheActivityIndicator from "./TheActivityIndicator";
-import TheAlert from "./TheAlert";
-import CustomComponent from "./CustomComponent";
-import TheStyleSheet from "./TheStyleSheet";
-import FlexBoxLayout from "./FlexboxLayout";
-import LayoutRelativeAbsolute from "./Layout(Relative & Absolute)";
-import DynamicUI from "./DynamicUI";
-import DynamicUI2 from "./DynamicUI2";
-import TheSafeAreaView from "./TheSafeAreaView";
-import ThePlatformSpecificCode from "./ThePlatformSpecificCode";
-import CustomButton from "./CustomButton";
-import Pokemon from "./PokemonCards/Pokemon";
-import {TheList} from "./TheList";
+import StaticImages from "./fundamentals//StaticImages";
+import RemoteImages from "./fundamentals/RemoteImages";
+import ImgBackground from "./fundamentals/ImgBackground";
+import TheScrollView from "./fundamentals/TheScrollView";
+import Buttons from "./fundamentals/Buttons";
+import Pressables from "./fundamentals/Pressables";
+import Modals from "./fundamentals/Modals";
+import TheStatusBar from "./fundamentals/TheStatusBar";
+import TheActivityIndicator from "./fundamentals/TheActivityIndicator";
+import TheAlert from "./fundamentals/TheAlert";
+import CustomComponent from "./fundamentals/CustomComponent";
+import TheStyleSheet from "./fundamentals/TheStyleSheet";
+import FlexBoxLayout from "./fundamentals/FlexboxLayout";
+import LayoutRelativeAbsolute from "./fundamentals/Layout(Relative & Absolute)";
+import DynamicUI from "./fundamentals/DynamicUI";
+import DynamicUI2 from "./fundamentals/DynamicUI2";
+import TheSafeAreaView from "./fundamentals/TheSafeAreaView";
+import ThePlatformSpecificCode from "./fundamentals/ThePlatformSpecificCode";
+import CustomButton from "./fundamentals/CustomButton";
+import Pokemon from "./fundamentals/PokemonCards/Pokemon";
+import {TheList} from "./fundamentals/TheList";
+import TheFlatList from "./fundamentals/TheFlatList";
 
 
 
@@ -44,7 +45,8 @@ const App = () => {
     //   <ThePlatformSpecificCode/>
     //   <CustomButton title="Click this" onPress={() => alert("Pressed")}/>
     //   <Pokemon/>
-      <TheList/>
+    //   <TheList/>
+      <TheFlatList/>
   );
    
 }

@@ -1,5 +1,5 @@
 import {SafeAreaView, View, Text, Image} from "react-native";
-import {myStyles} from "../Stylings";
+import {myStyles} from "../Stylings.js";
 
 const getTypeDetails = (type) => {
     switch (type.toLowerCase()){

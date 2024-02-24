@@ -1,5 +1,5 @@
 import {SafeAreaView, ScrollView} from "react-native";
-import {myStyles} from "../Stylings";
+import {myStyles} from "../Stylings.js";
 import PokemonCards from "./PokemonCards";
 
 
@@ -8,7 +8,7 @@ const Pokemon = () => {
     const pokeStyling = myStyles.Pokemon;
     const poke1 = {
         name: "Pokemon 1",
-        image: require("../assets/poke1.jpg"),
+        image: require("../../assets/poke1.jpg"),
         type: "Fire",
         hp: 39,
         moves: ["Scratch", "Ember", "Growl", "Leer"],
@@ -16,7 +16,7 @@ const Pokemon = () => {
     };
     const poke2 = {
         name: "Pokemon 2",
-        image: require("../assets/poke2.jpg"),
+        image: require("../../assets/poke2.jpg"),
         type: "water",
         hp: 45,
         moves: ["Tackle", "Water Gun", "Tail Whip", "Leer"],
@@ -24,7 +24,7 @@ const Pokemon = () => {
     };
     const poke3 = {
         name: "Pokemon 3",
-        image: require("../assets/poke3.jpg"),
+        image: require("../../assets/poke3.jpg"),
         type: "Grass",
         hp: 80,
         moves: ["Scratch", "Ember", "Growl", "Leer"],
@@ -32,7 +32,7 @@ const Pokemon = () => {
     };
     const poke4 = {
         name: "Pokemon 4",
-        image: require("../assets/poke4.png"),
+        image: require("../../assets/poke4.png"),
         type: "Electric",
         hp: 70,
         moves: ["Tackle", "Water Gun", "Tail Whip", "Leer"],

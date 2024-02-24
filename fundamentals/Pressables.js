@@ -1,5 +1,5 @@
 import { View, Image, Text, Button, ScrollView, Pressable } from "react-native";
-const logoImg = require("./assets/adaptive-icon.png");
+const logoImg = require("../assets/adaptive-icon.png");
 
 const Pressables = () => {
   return (

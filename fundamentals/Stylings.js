@@ -254,6 +254,50 @@ export const myStyles = StyleSheet.create({
         },
         weakContainer: {
             marginBottom: 8
+        },
+        pokeList: {
+            container: {
+                flex: 1,
+                backgroundColor: '#f5f5f5',
+                paddingTop: StatusBar.currentHeight
+            },
+            scrollView: {
+                paddingHorizontal: 16
+            },
+            card: {
+                backgroundColor: 'white',
+                borderWidth: 1,
+                padding: 16,
+                borderRadius: 8,
+                marginBottom: 16
+            },
+            text: {
+                fontSize: 30
+            },
+            listEmpty: {
+                fontWeight: 'bold',
+                fontSize: 20
+            },
+            headerText: {
+                fontWeight: 'bold',
+                fontSize: 20,
+                textAlign: 'center',
+                marginBottom: 12
+            },
+            footerText: {
+                fontWeight: 'bold',
+                fontSize: 20,
+                marginTop: 12,
+                textAlign: 'center'
+            }
+        },
+        flatList: {
+            card: {
+                backgroundColor: 'white',
+                borderRadius: 10,
+                borderWidth: 1,
+                padding: 16
+            }
         }
     }
 })

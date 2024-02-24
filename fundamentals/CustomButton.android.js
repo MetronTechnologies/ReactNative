@@ -1,5 +1,5 @@
 import {SafeAreaView, Text, View, Pressable} from "react-native";
-import {myStyles} from "./Stylings";
+import {myStyles} from "./Stylings.js";
 
 
 const CustomButton = ({onPress, title}) => {

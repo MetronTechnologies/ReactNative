@@ -1,5 +1,5 @@
 import { View, Text, Image, ImageBackground, ScrollView } from "react-native";
-const logoImg = require("./assets/adaptive-icon.png");
+const logoImg = require("../assets/adaptive-icon.png");
 
 const TheScrollView = () => {
   return (
