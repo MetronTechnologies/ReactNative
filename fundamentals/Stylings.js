@@ -289,6 +289,16 @@ export const myStyles = StyleSheet.create({
                 fontSize: 20,
                 marginTop: 12,
                 textAlign: 'center'
+            },
+            sectionHeaderText: {
+                backgroundColor: 'white',
+                fontSize: 24,
+                fontWeight: 'bold'
+            },
+            sectionCard: {
+                borderWidth: 1,
+                borderRadius: 10,
+                padding: 16
             }
         },
         flatList: {

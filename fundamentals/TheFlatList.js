@@ -40,7 +40,7 @@ const TheFlatList = () => {
                         </Text>
                     }
                     ListFooterComponent={
-                        <Text style={flatStyle.footerText}>
+                        <Text style={flatStyle.footerText }>
                             End of list
                         </Text>
                     }

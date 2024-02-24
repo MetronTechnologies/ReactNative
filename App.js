@@ -20,6 +20,7 @@ import CustomButton from "./fundamentals/CustomButton";
 import Pokemon from "./fundamentals/PokemonCards/Pokemon";
 import {TheList} from "./fundamentals/TheList";
 import TheFlatList from "./fundamentals/TheFlatList";
+import TheSectionList from "./fundamentals/TheSectionList";
 
 
 
@@ -46,7 +47,8 @@ const App = () => {
     //   <CustomButton title="Click this" onPress={() => alert("Pressed")}/>
     //   <Pokemon/>
     //   <TheList/>
-      <TheFlatList/>
+    //   <TheFlatList/>
+      <TheSectionList/>
   );
    
 }
