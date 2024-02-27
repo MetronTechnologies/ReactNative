@@ -309,5 +309,179 @@ export const myStyles = StyleSheet.create({
                 padding: 16
             }
         }
+    },
+    FormStyles: {
+        container: {
+            flex: 1,
+            backgroundColor: '#f5f5f5',
+            paddingTop: StatusBar.currentHeight
+        },
+        textInput: {
+            height: 40,
+            margin: 12,
+            padding: 10,
+            borderWidth: 1,
+            borderRadius: 10
+        },
+        multiline: {
+            minHeight: 100,
+            textAlignVertical: "top"
+        },
+        switch: {
+            container: {
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                paddingHorizontal: 10
+            }
+        },
+        text: {
+            fontSize: 30,
+            padding: 10
+        },
+        login: {
+            container: {
+                flex: 1,
+                justifyContent: 'center',
+                paddingHorizontal: 20,
+                backgroundColor: '#f5f5f5'
+            },
+            form: {
+                backgroundColor: 'white',
+                padding: 20,
+                borderRadius: 10,
+                shadowColor: 'black',
+                shadowOffset: {
+                    width: 0,
+                    height: 2
+                },
+                shadowOpacity: 0.25,
+                shadowRadius: 4,
+                elevation: 5
+            },
+            labels: {
+                fontSize: 16 ,
+                marginBottom: 5,
+                fontWeight: 'bold'
+            },
+            inputs: {
+                height: 40,
+                borderColor: '#ddd',
+                borderWidth: 1,
+                padding: 10,
+                borderRadius: 5,
+                marginBottom: 15
+            },
+            image: {
+                width: 200,
+                height: 200,
+                alignSelf: 'center',
+                marginBottom: 50,
+                borderRadius: 10
+            },
+            errorText: {
+                color: 'red',
+                marginBottom: 10
+            }
+        }
+    },
+    Networking: {
+        container: {
+            flex: 1,
+            backgroundColor: '#f5f5f5',
+            paddingTop: StatusBar.currentHeight
+        },
+        listContainer: {
+            flex: 1,
+            paddingHorizontal: 16
+        },
+        card: {
+            backgroundColor: 'white',
+            padding: 16,
+            borderRadius: 10,
+            borderWidth: 1
+        },
+        titleText: {
+            fontSize: 30,
+        },
+        bodyText: {
+            fontSize: 24,
+            color: '#666666'
+        },
+        headerText: {
+            fontSize: 24,
+            textAlign: 'center',
+            marginBottom: 12
+        },
+        footerText: {
+            fontSize: 24,
+            textAlign: 'center',
+            marginTop: 12
+        },
+        loader: {
+            flex: 1,
+            backgroundColor: '#f5f5f5',
+            paddingTop: StatusBar.currentHeight,
+            justifyContent: 'center',
+            alignItems: 'center'
+        },
+        inputContainer: {
+            backgroundColor: 'white',
+            padding: 16,
+            borderRadius: 10,
+            borderWidth: 1,
+            margin: 16
+        },
+        input: {
+            height: 40,
+            borderColor: 'gray',
+            borderWidth: 1,
+            marginBottom: 8,
+            padding: 8,
+            borderRadius: 8
+        },
+        errorContainer: {
+            backgroundColor: '#ffc0cb',
+            padding: 16,
+            borderRadius: 8,
+            borderWidth: 1,
+            margin: 16,
+            alignItems: 'center'
+        },
+        errorText: {
+            color: '#d8000c',
+            fontSize: 16,
+            textAlign: 'center'
+        }
+    },
+    Navigation: {
+        container: {
+            flex: 1,
+            paddingTop: StatusBar.currentHeight,
+        },
+        home: {
+            container: {
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
+            },
+            text: {
+                fontSize: 24,
+                fontWeight: 'bold',
+                marginBottom: 16
+            }
+        },
+        drawer: {
+            container: {
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
+            },
+            text: {
+                fontSize: 24,
+                fontWeight: 'bold',
+                marginBottom: 16
+            }
+        }
     }
 })

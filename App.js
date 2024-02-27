@@ -21,6 +21,14 @@ import Pokemon from "./fundamentals/PokemonCards/Pokemon";
 import {TheList} from "./fundamentals/TheList";
 import TheFlatList from "./fundamentals/TheFlatList";
 import TheSectionList from "./fundamentals/TheSectionList";
+import TheTextInput from "./fundamentals/Forms/TheTextInput";
+import TheLoginForm from "./fundamentals/Forms/TheLoginForm";
+import TheSwitch from "./fundamentals/Forms/TheSwitch";
+import TheNetworking from "./fundamentals/TheNetworking";
+import TheNativeStackNavigation from "./fundamentals/Navigations/TheNativeStackNavigation";
+import TheDrawerNavigation from "./fundamentals/Navigations/TheDrawerNavigation";
+import {AppRegistry} from "react-native";
+import TheTabNavigation from "./fundamentals/Navigations/TheTabNavigation";
 
 
 
@@ -48,9 +56,18 @@ const App = () => {
     //   <Pokemon/>
     //   <TheList/>
     //   <TheFlatList/>
-      <TheSectionList/>
+    //   <TheSectionList/>
+    //   <TheTextInput/>
+    //   <TheSwitch/>
+    //   <TheLoginForm/>
+    //   <TheNetworking/>
+    //   <TheNativeStackNavigation/>
+    //   <TheDrawerNavigation/>
+      <TheTabNavigation/>
   );
    
 }
 
+
+// AppRegistry.registerComponent(appName.toLowerCase(), () => App);
 export default App;

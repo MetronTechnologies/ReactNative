@@ -106,3 +106,18 @@ List
     -- Using the normal list method, al items are rendered in the list even when they are not in the view port.
     -- The recommended way of rendering list in react native is to use the FLAT LIST component which renders only the items currently in view which makes it (flat list) performant for long lists
 
+
+Navigation
+    -- Navigation is the mechanism that allows users to move across different screens, access features, and generally use the app effectively.
+    -- React navigation provides a variety of navigators such as stack, drawer, and tab navigators.
+    -- Stack navigator provides a way for the app to transition between screens where each new screen is placed on top of a stack.
+    -- Drawer navigator renders a navigation drawer on the side of the screen which can be opened and closed via gestures
+    -- Tab navigator is at the bottom of the screen and lets each switching between different routes
+    -- npm install @react-navigation/native
+    -- npm install react-native-screens react-native-safe-area-context
+    -- npm i @react-navigation/native-stack
+    -- npm i @react-navigation/drawer
+    -- npm i react-native-gesture-handler react-native-reanimated
+    -- npm install @react-navigation/bottom-tabs
+
+
